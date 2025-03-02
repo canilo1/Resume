@@ -1,3 +1,46 @@
-body{
-  background-color: black;
+/* index.css */
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Sigmar&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html{
+  color-scheme: dark;
+}
+
+#NavBar {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: auto;
+
+  min-width: 0;
+  color: red;
+flex-wrap: wrap;
+font-family: "Jersey 20";
+
+
+}
+
+#ContactImage{
+max-width: 20px;
+}
+#Sword {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centers the sword */
+  width: 30px; /* Adjust this to resize the sword */
+  height: auto;
+}
+
+#MyExperienceBar {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+ 
+
 }
