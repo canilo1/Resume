@@ -16,7 +16,7 @@ html{
   display: flex;
   justify-content: space-evenly;
   min-height: auto;
-
+  padding-top: 30px;
   min-width: 0;
   color: red;
 flex-wrap: wrap;
@@ -25,15 +25,19 @@ font-family: "Jersey 20";
 
 }
 
-#ContactImage{
+#ContactImage,#PaperImage{
 max-width: 20px;
+}
+#PaperImage{
+  max-width: 30px;
+  filter: invert(1);
 }
 #Sword {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: -30%;
   transform: translate(-50%, -50%); /* Centers the sword */
-  width: 30px; /* Adjust this to resize the sword */
+  width: 90px; /* Adjust this to resize the sword */
   height: auto;
 }
 
