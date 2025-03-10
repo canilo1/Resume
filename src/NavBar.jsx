@@ -38,7 +38,7 @@ const NavBar = () => {
       gsap.to(HandObject.current, { rotation: 0, duration: 0.9 });
       gsap.to(PaperImage.current, { rotation: 0, duration: 0.9 });
     }
-  }, [Hovered]); // Trigger the effect when Hovered changes
+  }, [Hovered]); 
 
   return (
     <>
@@ -46,25 +46,41 @@ const NavBar = () => {
         <h1
           id="JourneyBar"
           className="NavHeadings"
-          onMouseEnter={() => setHovered("#JourneyBar")} // Set hover to the current element
-          onMouseLeave={() => setHovered(null)} // Reset hover when mouse leaves
+          onMouseEnter={() => setHovered("#JourneyBar")} 
+          onMouseLeave={() => setHovered(null)} 
         >
           My Journey
         </h1>
         <h1
           id="MyExperienceBar"
           className="NavHeadings"
-          onMouseEnter={() => setHovered("#MyExperienceBar")} // Set hover to the current element
-          onMouseLeave={() => setHovered(null)} // Reset hover when mouse leaves
+          onMouseEnter={() => setHovered("#MyExperienceBar")} 
+          onMouseLeave={() => setHovered(null)}
         >
           <img src={Sword} id="Sword" ref={SwordObject} alt="Sword" />
           My Experience
         </h1>
+        <section className="ProjectContainer">
+            <ul>
+              <button className="Projects">
+                Project1
+              </button>
+              <button className="Projects">
+                Project2
+              </button>
+              <button className="Projects">
+                Project 3
+              </button>
+              <button lassName="Projects">
+                Project 3
+              </button>
+            </ul>
+          </section>
         <h1
           id="BlogBar"
           className="NavHeadings"
-          onMouseEnter={() => setHovered("#BlogBar")} // Set hover to the current element
-          onMouseLeave={() => setHovered(null)} // Reset hover when mouse leaves
+          onMouseEnter={() => setHovered("#BlogBar")} 
+          onMouseLeave={() => setHovered(null)} 
         >
           <img src={Paper} ref={PaperImage} id="PaperImage" className="NavHeadings" alt="Paper" />
           Blog
